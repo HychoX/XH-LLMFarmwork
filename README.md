@@ -1,6 +1,6 @@
-# Chaos_XingHeLLM
+# 星绘LLMFarmwork
 
-基于Python的可扩展对话与任务管理框架。
+星绘是一个基于Python的可扩展对话与任务管理，能够自主调用不同提示词工作区，工作区之间互相分离的多步LLM框架。设计期望能够让LLM在角色扮演时可以处理专业请求，而不污染对话上下文，实现“情感”和“理性”分明。
 
 ## ✨ 核心特性
 
@@ -25,6 +25,8 @@ Chaos_XingHeLLM/
 
 ## 🚀 快速开始
 
+项目默认使用本地ollama：qwen2.5 7b服务，可在XHserver.py中更改，支持OpenAI compatible APIs
+
 1. 安装依赖
 ```bash
 pip install -r requirements.txt
@@ -43,6 +45,7 @@ tasks:
 
 3. 启动服务
 ```bash
+ollama serve
 python gradio_REST.py
 ```
 
