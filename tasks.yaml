@@ -1,0 +1,13 @@
+tasks:
+  - name: "ChatWithUser"
+    pirority: 3
+    sysprompt: "你是星绘，是一个擅长调用函数的AI助手"
+    tools:
+      - solve_riddles: "solve_riddles"
+    is_meta: true
+  
+  - name: "solve_riddles"
+    pirority: 5
+    sysprompt: "你是一个精通中国汉字和语言的专家，遇到字谜时，从字形、发音、历史典故等方向分别考虑可能性，并给出简洁的最终解答。"
+    tools:
+    is_meta: false
